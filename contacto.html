@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulu - Home & Table | Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Barra de navegación premium -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">
+                <span class="text-gold">Lulu</span> - Home & Table
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Colecciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn btn-outline-gold" href="#">
+                            <i class="bi bi-person"></i> Cuenta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de contacto -->
+    <header class="contact-header bg-light-custom py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Contacto</h1>
+            <p class="lead">Estamos aquí para atenderte</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title text-start mb-4">Escríbenos</h2>
+                <p>Para consultas sobre productos, pedidos personalizados o cualquier otra información, completa el siguiente formulario y te responderemos en un plazo máximo de 24 horas.</p>
+                
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo *</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu nombre.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico *</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo válido.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto *</label>
+                        <select class="form-select" id="asunto" required>
+                            <option value="" selected disabled>Selecciona un asunto</option>
+                            <option>Consulta sobre productos</option>
+                            <option>Pedido personalizado</option>
+                            <option>Problema con mi pedido</option>
+                            <option>Eventos especiales</option>
+                            <option>Otro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor selecciona un asunto.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje *</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor escribe tu mensaje.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="privacidad" required>
+                        <label class="form-check-label" for="privacidad">Acepto la política de privacidad *</label>
+                        <div class="invalid-feedback">
+                            Debes aceptar la política de privacidad.
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-gold">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <div class="col-lg-6">
+                <h2 class="section-title text-start mb-4">Información de contacto</h2>
+                
+                <div class="contact-info-card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 text-gold me-3">
+                                <i class="bi bi-geo-alt-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h5>Showroom Madrid</h5>
+                                <p class="mb-0">Calle Textil 123, 28001 Madrid</p>
+                                <small class="text-muted">Solo con cita previa</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 text-gold me-3">
+                                <i class="bi bi-telephone-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h5>Atención al cliente</h5>
+                                <p class="mb-0">+34 910 123 456</p>
+                                <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 text-gold me-3">
+                                <i class="bi bi-envelope-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h5>Correo electrónico</h5>
+                                <p class="mb-0">info@luluhome.com</p>
+                                <p class="mb-0">pedidos@luluhome.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 text-gold me-3">
+                                <i class="bi bi-clock-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h5>Horario de atención</h5>
+                                <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+                                <p class="mb-0">Sábados: 10:00 - 14:00</p>
+                                <p class="mb-0">Domingos y festivos: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cita en Showroom -->
+                <div class="card mt-5 border-0 shadow">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4"><i class="bi bi-calendar2-week text-gold me-2"></i> Agenda una cita</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Fecha preferida</label>
+                                    <input type="date" class="form-control" min="2023-08-01">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Hora</label>
+                                    <select class="form-select">
+                                        <option>10:00 - 11:30</option>
+                                        <option>12:00 - 13:30</option>
+                                        <option>16:00 - 17:30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Motivo</label>
+                                <select class="form-select">
+                                    <option>Asesoría para bodas</option>
+                                    <option>Diseño de restaurante</option>
+                                    <option>Pedido corporativo</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-outline-gold w-100">Solicitar cita</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Visítanos -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-5">Visítanos</h2>
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.428490145603!2d-3.703847384603999!3d40.4192460633646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta%20de%20Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1689876543210!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="alert alert-info mt-4">
+                    <h5><i class="bi bi-info-circle-fill me-2"></i> ¿Necesitas ayuda inmediata?</h5>
+                    <p class="mb-0">Para consultas urgentes sobre pedidos, puedes llamarnos directamente al <strong>+34 610 123 456</strong> (24/7 para clientes Premium).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería del Taller -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-5">Nuestro taller artesanal</h2>
+                <div class="row g-2" data-masonry='{"percentPosition": true}'>
+                    <div class="col-sm-6 col-lg-4">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1100&q=80" class="img-fluid rounded" alt="Tejedora trabajando">
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1100&q=80" class="img-fluid rounded" alt="Materiales naturales">
+                    </div>
+                    <div class="col-sm-6 col-lg-7">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="img-fluid rounded" alt="Proceso artesanal">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipo de atención -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-5">Nuestro equipo de atención</h2>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Asesora" class="rounded-circle mb-3" width="150">
+                    <h5>Laura Martínez</h5>
+                    <p class="text-gold">Directora de Atención al Cliente</p>
+                    <p>"Con más de 10 años en el sector del lujo, estaré encantada de asesorarte personalmente."</p>
+                    <a href="mailto:laura@luluhome.com" class="btn btn-sm btn-outline-gold mt-2">
+                        <i class="bi bi-envelope me-1"></i> Contactar
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Asesor" class="rounded-circle mb-3" width="150">
+                    <h5>Carlos Rodríguez</h5>
+                    <p class="text-gold">Especialista en Producto</p>
+                    <p>"Conoce cada detalle de nuestros manteles y puede recomendarte el tejido perfecto."</p>
+                    <a href="mailto:carlos@luluhome.com" class="btn btn-sm btn-outline-gold mt-2">
+                        <i class="bi bi-envelope me-1"></i> Contactar
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Asesora" class="rounded-circle mb-3" width="150">
+                    <h5>Ana Sánchez</h5>
+                    <p class="text-gold">Diseñadora de Eventos</p>
+                    <p>"Transforma tus eventos en experiencias únicas con nuestra mantelería exclusiva."</p>
+                    <a href="mailto:ana@luluhome.com" class="btn btn-sm btn-outline-gold mt-2">
+                        <i class="bi bi-envelope me-1"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (igual que index.html) -->
+    <footer class="bg-black text-white py-5">
+        <!-- ... mismo footer que index.html ... -->
+    </footer>
+
+    <!-- Bootstrap JS + Masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    
+    <!-- Validación del formulario -->
+    <script>
+        (function () {
+            'use strict'
+            
+            var forms = document.querySelectorAll('.needs-validation')
+            
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>
